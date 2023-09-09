@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://csfgt4yfrs8mt"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ohe3w"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8kktx"]
+size = Vector2(1, 1)
+
+[node name="PrototypeMeshLibrary" type="Node3D"]
+
+[node name="Box" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+mesh = SubResource("BoxMesh_ohe3w")
+
+[node name="Plane" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_8kktx")
